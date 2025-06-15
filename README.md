@@ -15,11 +15,15 @@ Configurable Parameters: Easily adjust detection thresholds, model paths, and di
 🚀 Technologies Used
 
 Python 3.x
+
 OpenCV (opencv-python): For video capture, image processing, face detection, and drawing.
+
 TensorFlow/Keras: For loading and running the deep learning emotion recognition model.
+
 NumPy: For numerical operations on image data.
 
 📊Model Used
 
 haarcascade_frontalface_default.xml: This is a standard OpenCV cascade. You can often find it within your OpenCV installation directory (e.g., opencv/data/haarcascades/) or download it from the official OpenCV GitHub repository. Place it in the models/ directory.
-em_recog.h5: This is your emotion recognition model. Ensure you have a valid Keras .h5 (or .hdf5) model file. Rename it to em_recog.h5 and place it in the models/ directory. Crucially, ensure this model was trained on the same 7 emotions in the exact order specified in config.py's EMOTIONS_LIST. A common source for such models is Kaggle (e.g., FER2013 datasets).
+
+em_recog.h5: This is the  emotion recognition model placed  in the models/ directory. Crucially, this model was trained on the same 7 emotions in the exact order specified in config.py's EMOTIONS_LIST.
